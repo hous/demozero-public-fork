@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  div(class="row mt-3")
+    div(class="col-sm-12")
+      div(class="card")
+        h5(class="card-header") An error occurred during login.
+        div(class="card-body")
+          h5(class="card-title") #{error}
+          p(class="card-text") #{error_description}
+          a(href="/")
+            button(id="apiCallButton" class="btn btn-danger") Home
